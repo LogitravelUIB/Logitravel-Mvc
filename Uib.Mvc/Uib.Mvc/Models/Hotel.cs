@@ -15,5 +15,10 @@ namespace Uib.Mvc.Models
         public string Latitude { get; set; }
         public string Longitude { get; set; }
         public Price Price { get; set; }
+
+        public string ImageWithoutProtocol
+        {
+            get { return Image.Replace("http://", string.Empty); }
+        }
     }
 }

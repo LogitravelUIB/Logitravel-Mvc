@@ -1,0 +1,116 @@
+﻿@model Uib.Mvc.Models.Hotel  
+<!-- Item -->
+<div class="hot-itemBox box contHotel" id="item_1308688">
+    <div class="hot-itemContent">
+        <!-- Hotel Photo -->
+        <a class="hot-photo fancybox" rel="gallery_1308688" title="Diana Roof Garden  | 1 / 5" href="http://cdn.logitravel.com/wsimgresize/resize/crop/600/300/@(Model.ImageWithoutProtocol)">
+
+            <figure class="caption">
+                <img class="img-responsive" alt="Diana Roof Garden" src="@Model.Image" >
+                
+                @*<img class="lazy img-responsive" alt="Diana Roof Garden" src="http://cdn.logitravel.com/comun/images/shim.gif" data-original="http://cdn.logitravel.com/wsimgresize/resize/crop/200/200/@(Model.ImageWithoutProtocol)?f=1507151736" data-alternative="http://cdn.logitravel.com/wsimgresize/resize/crop/200/200/cdn.logitravel.com/comun/images/hoteles/img_nodisponible.jpg">*@
+
+                <figcaption class="bg-normal transparent_ visible-md visible-lg"><i class="fa fa-camera mr-7"></i>Ver fotos</figcaption>
+            </figure>
+        </a>
+
+        <div class="gallery hidden">
+            <div class="item p-0 view-details">
+                <a rel="gallery_1308688" class="fancybox" title="Diana Roof Garden | 2 / 5" href="http://cdn.logitravel.com/wsimgresize/resize/crop/600/300/cdn.logitravel.com/contenidosshared/hotelmedia/thumbor/uploads/hotel_photo/201506/_clb5647_5_6_tonemapped.jpg?f=1507151736"></a>
+            </div>
+            <div class="item p-0 view-details">
+                <a rel="gallery_1308688" class="fancybox" title="Diana Roof Garden | 3 / 5" href="http://cdn.logitravel.com/wsimgresize/resize/crop/600/300/cdn.logitravel.com/contenidosshared/hotelmedia/thumbor/uploads/hotel_photo/201506/porta.jpg?f=1507151736"></a>
+            </div>
+            <div class="item p-0 view-details">
+                <a rel="gallery_1308688" class="fancybox" title="Diana Roof Garden | 4 / 5" href="http://cdn.logitravel.com/wsimgresize/resize/crop/600/300/cdn.logitravel.com/contenidosshared/hotelmedia/thumbor/uploads/hotel_photo/201506/_clb5735.jpg?f=1507151736"></a>
+            </div>
+            <div class="item p-0 view-details">
+                <a rel="gallery_1308688" class="fancybox" title="Diana Roof Garden | 5 / 5" href="http://cdn.logitravel.com/wsimgresize/resize/crop/600/300/cdn.logitravel.com/contenidosshared/hotelmedia/thumbor/uploads/hotel_photo/201505/img_0009-sala-colazione.jpg?f=1507151736"></a>
+            </div>
+
+        </div>
+
+
+        <!-- Hotel Data -->
+        <div class="hot-data">
+            <a href="http://www.logitravel.com/hoteles/hotel-diana-roof-garden-roma-7391475.html">
+                <h3 class="clickDetail">@Model.Name</h3>
+            </a>
+            <span class="hotelRating star4 m-0"></span>
+            <span class="hot-city hidden-lg-inline ml-5">Roma</span>
+            <ul class="hot-location hidden-xs">
+
+
+                <li>
+                    <a href="http://www.logitravel.com/hoteles/hotel-diana-roof-garden-roma-7391475.html?goTo=location">
+                        <p class="hot-address visible-lg">Dirección</p>
+                    </a>
+                </li>
+                <li>
+
+                    <p class="hot-description">
+                        <a class="hot-description" href="http://www.logitravel.com/hoteles/hotel-diana-roof-garden-roma-7391475.html?goTo=summary">
+                            @Model.Description
+                        </a>
+                        <a href="http://www.logitravel.com/hoteles/hotel-diana-roof-garden-roma-7391475.html" class="normal underline ml-5 clickDetail">leer m&#225;s</a>
+                    </p>
+                </li>
+            </ul>
+            <div class="hot-reviewServices">
+
+                <div class="hot-review">
+                    <a class="grisMedio" href="http://www.logitravel.com/hoteles/hotel-diana-roof-garden-roma-7391475.html?goTo=reviews">
+                        <p class="hot-valueReview mb-5"><strong class="sieteOmas">8 Muy bueno</strong></p>
+                        <p class="clarification grisMedio hidden-xs">Basada en 82 comentarios</p>
+                    </a>
+                </div>
+
+                <a href="http://www.logitravel.com/hoteles/hotel-diana-roof-garden-roma-7391475.html?goTo=services">
+                    <ul class="hot-services hidden-xs">
+
+                        <li>
+                            <i class="icofa icofa-hot-2" title="Acceso a Internet"></i>
+                            <span class="visuallyhidden">Acceso a Internet</span>
+                        </li>
+                        <li>
+                            <i class="icofa icofa-hot-15" title="Cambio de divisa"></i>
+                            <span class="visuallyhidden">Cambio de divisa</span>
+                        </li>
+                        <li>
+                            <i class="icofa icofa-hot-16" title="Lavander&#237;a"></i>
+                            <span class="visuallyhidden">Lavander&#237;a</span>
+                        </li>
+                        <li>
+                            <i class="icofa icofa-hot-18" title="Restaurante"></i>
+                            <span class="visuallyhidden">Restaurante</span>
+                        </li>
+                        <li>
+                            <i class="icofa icofa-hot-20" title="Bar/Cafeter&#237;a"></i>
+                            <span class="visuallyhidden">Bar/Cafeter&#237;a</span>
+                        </li>
+                        <li>
+                            <i class="icofa icofa-hot-26" title="Recepci&#243;n 24 horas"></i>
+                            <span class="visuallyhidden">Recepci&#243;n 24 horas</span>
+                        </li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+
+        <!-- Hotel Summary Price -->
+        <div class="hot-summaryPrice clickDetail linkModalPrice" data-target="#hot_addoffermodal" data-toggle="modal" data-remote="#modalRemote"
+             data-hotelcode="1308688" data-titlemodal="Diana Roof Garden" data-pricemodal="38&amp;#8364;"
+             data-hotelinfo="Diana Roof Garden" data-boardtype="" data-pictureurl="http://cdn.logitravel.com/wsimgresize/resize/crop/280/180/@(Model.ImageWithoutProtocol)"
+             data-checkin="24/08/2015" data-checkout="28/08/2015" data-urldestination="http://www.logitravel.com/hoteles/hotel-diana-roof-garden-roma-7391475.html"
+             data-urlhotel="http://www.logitravel.com/hoteles/hotel-diana-roof-garden-roma-7391475.html" data-hotelcategorycssicon="starPeq4" data-hotelcategorystarcount="****" data-citycode=6600>
+            <div class="mb-10 hidden-xs">
+                <span class="price nightPrice"><small>desde</small>@Model.Price &#8364;</span>
+                <span class="clarification">Por persona/noche</span>
+            </div>
+            <span class="boton boton-medio mt-7 clickDetail hidden-xs" data-hotelcode="1308688">Seleccionar</span>
+        </div>
+    </div>
+
+
+
+</div><!-- Item -->
