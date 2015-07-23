@@ -17,7 +17,7 @@ namespace Uib.Mvc.Controllers
             myModel.Titulo = "Titulo del ejemplo";
             myModel.Hoteles = (List<Hotel>) new HotelController().Get(city, lang);
 
-            
+
             //if (myModel.Hoteles.Count > 10)
             //{
             //    myModel.Hoteles = myModel.Hoteles.GetRange(0, 10);

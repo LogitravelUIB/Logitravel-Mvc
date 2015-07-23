@@ -2597,9 +2597,9 @@
 
                                 <div id="listHotelsCity" class="hot-resultsBox listHotelsPaged mt-10">
                                     <h3>@Model.Titulo</h3>
-                                    @foreach (var hotel in Model.Hotels)
+                                    @foreach (var hotel in Model.Hoteles)
                                     {
-                                        @Html.Partial("Partial/Hotel.cshtml", hotel)
+                                        @Html.Partial("Partial/Hotel", hotel)
                                     }
 
                                 </div>
